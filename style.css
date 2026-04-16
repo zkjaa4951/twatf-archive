@@ -1,0 +1,246 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2b3a4d; 
+    padding: 20px 0;
+}
+
+#wrapper {
+    width: 780px;
+    margin: 0 auto;
+    background: #4d6990; 
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+/* HEADER */
+#header {
+    background: #4d6990; 
+    background: url(images/header.jpg) repeat-x #4d6990;
+    height: 100px; 
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #a3c1e0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* STYLING LOGO */
+#header img {
+    height: 105px; 
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); 
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#header img:hover {
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.8));
+    transform: scale(1.05);
+}
+
+#menu-utama {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+#menu-utama li {
+    padding: 0 15px;
+    border-right: 1px solid #6384af; 
+}
+
+#menu-utama li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#header form input {
+    padding: 5px 10px;
+    border: 1px solid #364b67;
+    background: #ffffff; 
+    color: #333;
+    border-radius: 3px;
+}
+
+/* BANNER SLIDER */
+#banner-slider {
+    width: 780px;
+    height: 350px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 780px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* STYLING TOMBOL SLIDER */
+.btn-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background: rgba(43, 58, 77, 0.4); 
+    color: rgba(255, 255, 255, 0.8); 
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px; 
+    
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.btn-slider:hover {
+    background: rgba(255, 255, 255, 0.9); 
+    color: #4d6990; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.prev { 
+    left: 0; 
+    border-radius: 0 3px 3px 0; 
+}
+
+.next { 
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
+}
+
+/* CONTENT */
+#daftar-artikel {
+    width: 500px; 
+    float: left;
+    padding: 20px;
+}
+
+.artikel {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #6384af; 
+    padding-bottom: 20px;
+}
+
+.artikel img {
+    float: left;
+    width: 170px; 
+    height: 120px;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.artikel h1 { font-size: 22px; color: #ffffff; margin-bottom: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+
+.artikel b { 
+    font-size: 11px; 
+    background: #a3c1e0; 
+    padding: 2px 8px; 
+    margin-right: 5px; 
+    color: #2b3a4d; 
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.artikel h1 { font-size: 22px; color: #ffffff; margin-bottom: 5px; }
+.artikel p { font-size: 14px; color: #fafbfc; margin: 10px 0; line-height: 1.6; }
+.artikel a { text-align: right; display: block; text-decoration: none; color: #fafbfc; font-weight: bold; }
+
+/* SIDEBAR */
+#sidebar {
+    width: 280px; 
+    float: right;
+    padding: 20px;
+    background: #3e5675; 
+}
+
+#sidebar h2 { 
+    font-size: 18px; 
+    color: #ffffff; 
+    margin-top: 20px;
+    margin-bottom: 15px; 
+    border-left: 4px solid #a3c1e0; 
+    padding-left: 10px; 
+}
+
+#sidebar h2:first-child {
+    margin-top: 0;
+}
+
+#sidebar p { 
+    font-size: 14px; 
+    color: #e1e8f0;
+    margin-bottom: 10px; 
+    line-height: 1.5;
+}
+
+/* STYLING GARIS DI SIDEBAR */
+#sidebar ul li { 
+    padding: 8px 0; 
+    border-bottom: 1px dotted #a3c1e0; 
+    list-style-type: none; 
+}
+
+#sidebar ul li a { 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-size: 14px; 
+}
+
+#sidebar ul li a:hover { 
+    color: #a3c1e0; 
+    padding-left: 5px; 
+    transition: 0.2s; 
+}
+
+.artikel b { 
+    display: inline-block; 
+    font-size: 11px; 
+    background: #a3c1e0; 
+    padding: 2px 8px; 
+    margin-right: 10px; 
+    margin-bottom: 5px;
+    color: #2b3a4d; 
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+#footer {
+    clear: both;
+    background: #2b3a4d; 
+    color: #fafbfc;
+    text-align: center;
+    padding: 25px;
+}
+
+/* PESAN KONSTELASI */
+.constellation-msg {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    font-family: 'Courier New', Courier, monospace;
+}

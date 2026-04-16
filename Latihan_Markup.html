@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Markup - Kim Dokja Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div style="display: flex; align-items: center;">
+                <img src="images/logo.png" alt="logo" />
+                <ul id="menu-utama">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skenario</a></li>
+                    <li><a href="#">Rasi Bintang</a></li>
+                </ul>
+            </div>
+            <form>
+                <input type="text" name="search" placeholder="Cari skenario..." />
+            </form>
+        </div>
+
+    <div id="banner-slider">
+        <button class="btn-slider prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="btn-slider next" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="slider-track" id="sliderTrack" >
+           
+        <div class="slide">
+            <img src="images/orv.jpg" alt="orv image">
+        </div>
+
+        <div class="slide">
+            <img src="images/orv2.jpg" alt="orv image">
+        </div>
+
+        <div class="slide">
+            <img src="images/orv3.jpg" alt="orv image">
+        </div>
+
+        <div class="slide">
+            <img src="images/orv4.jpg" alt="orv image">
+        </div>
+
+        <div class="slide">
+            <img src="images/orv5.jpg" alt="orv image">
+        </div>
+
+        <div class="slide">
+            <img src="images/orv6.jpg" alt="orv image">
+        </div>
+
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+
+        <div id="daftar-artikel">
+            <div class="artikel">
+                <img src="images/dokja3.jpg" alt="Gambar Artikel" />
+                <h1>The Only Reader</h1>
+                <b>Des XX, 202X</b><b>Views : 5,100,000</b>
+                <p>Kim Dokja, seorang karyawan biasa, tiba-tiba mendapati dunia berubah menjadi novel yang pernah ia baca selama 10 th.</p>
+                <a href="https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154">Baca Skenario →</a>
+            </div>
+
+            <div class="artikel">
+                <img src="images/yoo-jonghyuk.jpg" alt="Gambar Artikel" />
+                <h1>The Regressor of 3rd Turn</h1>
+                <b>Jan XX, 202X</b><b>Views : 3,000,000</b>
+                <p>Yoo Jonghyuk kembali ke masa lalu untuk menyelamatkan dunia. Akankah kali ini ia berhasil mencapai akhir cerita?</p>
+                <a href="#">Lihat Profil →</a>
+            </div>
+
+            <div class="artikel">
+                <img src="images/epilog.jpg" alt="Gambar Artikel" />
+                <h1>The Final Wall</h1>
+                <b>Feb XX, 202X</b><b>Views : 4,000,000</b>
+                <p>Dibalik dinding terakhir, kebenaran tentang dunia ini terungkap. Siapakah sebenarnya sang penulis cerita ini?</p>
+                <a href="#">Buka Dinding →</a>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <h2>Who we are?</h2>
+            <p>Kim Dokja's Company adalah nebula yang dibentuk untuk menyelesaikan skenario terakhir tanpa mengorbankan siapapun.</p>
+            
+            <h2>Kategori</h2>
+            <ul>
+                <li><a href="#">Skenario Utama</a></li>
+                <li><a href="#">Skenario Tambahan</a></li>
+                <li><a href="#">Daftar Rasi Bintang</a></li>
+                <li><a href="#">Item Legendaris</a></li>
+                <li><a href="#">Berita Seoul</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <p>Kim Dokja's Company copyright 2026 by A Reader, Dokja</p>
+        </div>
+    </div>
+
+   <div style="margin-top: 30px; padding: 20px; text-align: center;">
+    <p class="constellation-msg" style="font-weight: bold; margin-bottom: 10px;">
+        [The Constellation 'Demon King of Salvation' is looking at you]
+    </p>
+        <audio id="laguDokja" loop>
+            <source src="audio/orv_theme.mp3" type="audio/mpeg">
+        </audio>
+        <button id="btn-play" style="padding: 10px 20px; cursor: pointer; background: #3498db; color: white; border: none; border-radius: 5px;">
+            Mainkan Lagu Skenario 
+        </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
