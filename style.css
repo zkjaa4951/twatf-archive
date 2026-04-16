@@ -244,3 +244,54 @@ body {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 780px) {
+    #wrapper {
+        width: 100%; 
+        border-radius: 0;
+    }
+
+    #header {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px;
+    }
+
+    #header img {
+        height: 60px; 
+        margin-bottom: 10px;
+    }
+
+    #menu-utama {
+        margin-left: 0;
+        margin-bottom: 10px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    #banner-slider {
+        width: 100%;
+        height: 200px; 
+    }
+
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    #daftar-artikel, #sidebar {
+        width: 100%; 
+        float: none;
+    }
+
+    .artikel img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .artikel a {
+        text-align: center;
+    }
+}
