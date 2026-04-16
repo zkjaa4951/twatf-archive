@@ -20,10 +20,10 @@ const track = document.getElementById('sliderTrack');
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
-const slideWidth = 780; 
-
 function updateSlider() {
-    const offset = -currentIndex * slideWidth;
+    
+    const currentWidth = slides[0].clientWidth; 
+    const offset = -currentIndex * currentWidth;
     track.style.transform = `translateX(${offset}px)`;
 }
 
@@ -47,3 +47,5 @@ function resetTimer() {
     clearInterval(autoSlide);
     autoSlide = setInterval(() => moveSlide(1), 4000);
 }
+
+window.addEventListener('resize', updateSlider);
